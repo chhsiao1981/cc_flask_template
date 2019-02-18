@@ -27,7 +27,6 @@ pwd
 # cp all to current dir
 rm -rf cc/.git*
 ln -s cc/scripts ./
-ln -s cc/config.js.tmpl ./
 
 # post setup - git
 rm -rf .git
