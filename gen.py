@@ -25,7 +25,7 @@ the_module = sys.argv[1]
 full_name = sys.argv[2]
 project = os.path.basename(os.getcwd())
 
-logging.warning('full_name: %s', full_name)
+logging.warning('full_name: %s project: %s', full_name, project)
 
 full_name_list = [project] + full_name.split('.')
 
@@ -39,7 +39,6 @@ include_pkg = pkg
 package_dir = '/'.join(full_name_list[:-1])
 include_package_dir = package_dir
 test_package_dir = '/'.join(['test_' + each_pkg for each_pkg in full_name_list[1:-1]])
-
 
 the_dict = {
     'pkg': pkg,
