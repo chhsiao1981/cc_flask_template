@@ -16,6 +16,7 @@ def underscore_to_camelcase(the_str):
     the_list = the_str.split('_')
     return ''.join([each_str.title() for each_str in the_list])
 
+
 def underscore_to_lower_camelcase(the_str):
     the_list = the_str.split('_')
     return the_list[0] + ''.join([each_str.title() for each_str in the_list[1:]])
@@ -36,6 +37,7 @@ project_name = project
 include_pkg = pkg
 
 package_dir = '/'.join(full_name_list[:-1])
+include_package_dir = package_dir
 test_package_dir = '/'.join(['test_' + each_pkg for each_pkg in full_name_list[1:-1]])
 
 

@@ -24,11 +24,6 @@ echo "python: ${the_python_path}"
 echo "current_dir: "
 pwd
 
-# remove files from create-react-app
-rm src/index.js
-rm package.json
-rm README.md
-
 # cp all to current dir
 rm -rf cc/.git*
 ln -s cc/scripts ./
