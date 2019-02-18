@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from {{pkg}}.constants import *
+from {{cookiecutter.pkg}}.constants import *
 
 import unittest
 import logging
 
-from {{pkg}} import cfg
+from {{cookiecutter.pkg}} import cfg
+
 
 class Object(object):
     pass
