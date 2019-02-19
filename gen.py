@@ -27,7 +27,7 @@ project = os.path.basename(os.getcwd())
 
 logging.warning('full_name: %s project: %s', full_name, project)
 
-full_name_list = [project] + full_name.split('.')
+full_name_list = full_name.split('.')
 
 pkg = '.'.join(full_name_list[:-1])
 module = full_name_list[-1]
