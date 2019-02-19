@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from {{cookiecutter.project}}.constants import S_OK, S_ERR, S_ERR_ALREADY_EXIST
+from {{cookiecutter.project_name}}.constants import S_OK, S_ERR, S_ERR_ALREADY_EXIST
 
-from {{cookiecutter.project}} import cfg
-from {{cookiecutter.project}}.utils.util_error import Error
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}}.utils.util_error import Error
 
 
 def db_find_one_ne(db_name, key, fields=None):

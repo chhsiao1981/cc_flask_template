@@ -4,7 +4,7 @@
 import gevent
 import grequests
 
-from {{cookiecutter.project}}.utils.util_error import Error
+from {{cookiecutter.project_name}}.utils.util_error import Error
 
 
 def http_multipost(the_url_data, timeout=HTTP_TIMEOUT, cookies=None, headers=None):

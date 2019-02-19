@@ -20,9 +20,9 @@ from flask_mail import Mail
 from flask_wtf.csrf import CSRFProtect
 from werkzeug.contrib.fixers import ProxyFix
 
-from {{cookiecutter.project}}.constants import *
-from {{cookiecutter.project}} import cfg
-from {{cookiecutter.project}}.utils.util_error import Error
+from {{cookiecutter.project_name}}.constants import *
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}}.utils.util_error import Error
 
 try:
     from urlparse import urlsplit

@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from {{cookiecutter.project}}.constants import S_OK, S_ERR
+from {{cookiecutter.project_name}}.constants import S_OK, S_ERR
 
 import uuid
 import base64
 import itertools
 
 
-from {{cookiecutter.project}}.utils.util_error import Error
+from {{cookiecutter.project_name}}.utils.util_error import Error
 
 
 def gen_random_string():

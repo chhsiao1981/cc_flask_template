@@ -20,14 +20,14 @@ from flask_security import login_user
 from social_flask_mongoengine.models import init_social
 from wtforms import Form, TextField
 
-from {{cookiecutter.project}}.constants import *
-from {{cookiecutter.project}} import cfg
-from {{cookiecutter.project}} import util
-from {{cookiecutter.project}}.utils import util_flask
-from {{cookiecutter.project}}.utils.util_flask import app, login_manager, User, _process_options_header, _process_header, crossdomain, db, LoginForm
-from {{cookiecutter.project}}.util import Error
+from {{cookiecutter.project_name}}.constants import *
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}} import util
+from {{cookiecutter.project_name}}.utils import util_flask
+from {{cookiecutter.project_name}}.utils.util_flask import app, login_manager, User, _process_options_header, _process_header, crossdomain, db, LoginForm
+from {{cookiecutter.project_name}}.util import Error
 
-from {{cookiecutter.project}}.my_social_auth.routes import social_auth
+from {{cookiecutter.project_name}}.my_social_auth.routes import social_auth
 
 
 @app.before_request
@@ -125,7 +125,7 @@ def _process_result(error, the_obj, status_code=200, mime='application/json', he
 
 def parse_args():
     ''' '''
-    parser = argparse.ArgumentParser(description='{{cookiecutter.project}}')
+    parser = argparse.ArgumentParser(description='{{cookiecutter.project_name}}')
     parser.add_argument('-i', '--ini', type=str, required=True, help="ini filename")
     parser.add_argument('-l', '--log_filename', type=str, default='', required=False, help="log filename")
     parser.add_argument('-p', '--port', type=int, required=True, help="port")
@@ -162,7 +162,7 @@ def _init_app(args):
         'MAIL_USE_SSL': cfg.config.get('mail_use_ssl', True),
         'MAIL_USER_NAME': cfg.config.get('mail_username', ''),
         'MAIL_PASSWORD': cfg.config.get('mail_password', ''),
-        # 'SOCIAL_AUTH_USER_MODEL': '{{cookiecutter.project}}.utils.util_flask.User',
+        # 'SOCIAL_AUTH_USER_MODEL': '{{cookiecutter.project_name}}.utils.util_flask.User',
         # 'SOCIAL_AUTH_FIELDS_STORED_IN_SESSION': ['keep'],
         # 'SOCIAL_AUTH_AUTHENTICATION_BACKENDS': [
         #     'social_core.backends.email.EmailAuth',
@@ -170,11 +170,11 @@ def _init_app(args):
         # 'SOCIAL_AUTH_EMAIL_FORM_URL': '/my-login-form',
         # 'SOCIAL_AUTH_EMAIL_FORM_HTML': '',
         # 'SOCIAL_AUTH_EMAIL_FORM_HTML': 'email_form.html',
-        # 'SOCIAL_AUTH_EMAIL_VALIDATION_FUNCTION': '{{cookiecutter.project}}.my_social_auth.email_validation.email_validation',
+        # 'SOCIAL_AUTH_EMAIL_VALIDATION_FUNCTION': '{{cookiecutter.project_name}}.my_social_auth.email_validation.email_validation',
         # 'SOCIAL_AUTH_EMAIL_VALIDATION_URL': '/my-login-form',
         # 'SOCIAL_AUTH_REVOKE_TOKENS_ON_DISCONNECT': True,
         # 'SOCIAL_AUTH_PIPELINE': [
-        #     '{{cookiecutter.project}}.my_social_auth.hash_info.hash_info',
+        #     '{{cookiecutter.project_name}}.my_social_auth.hash_info.hash_info',
         #     'social_core.pipeline.social_auth.social_details',
         #     'social_core.pipeline.social_auth.social_uid',
         #     'social_core.pipeline.social_auth.auth_allowed',
@@ -184,7 +184,7 @@ def _init_app(args):
         #     'social_core.pipeline.social_auth.associate_by_email',
         #     'social_core.pipeline.user.create_user',
         #     'social_core.pipeline.social_auth.associate_user',
-        #     '{{cookiecutter.project}}.my_social_auth.user_password.user_password',
+        #     '{{cookiecutter.project_name}}.my_social_auth.user_password.user_password',
         #     'social_core.pipeline.social_auth.load_extra_data',
         #     'social_core.pipeline.user.user_details',
         # ],
@@ -198,7 +198,7 @@ def _init_app(args):
 
     # XXX hack for User and Role
     util_flask._init_db(is_csrf=args.is_csrf)
-    from {{cookiecutter.project}}.utils.util_flask import User
+    from {{cookiecutter.project_name}}.utils.util_flask import User
 
     # init_social(app, util_flask.db)
     # app.register_blueprint(social_auth.social_auth)

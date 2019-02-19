@@ -8,12 +8,12 @@ import ujson as json
 import re
 from gevent.wsgi import WSGIServer
 
-from {{cookiecutter.project}}.constants import *
-from {{cookiecutter.project}} import cfg
-from {{cookiecutter.project}} import util
-from {{cookiecutter.project}}.util import Error
+from {{cookiecutter.project_name}}.constants import *
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}} import util
+from {{cookiecutter.project_name}}.util import Error
 
-from {{cookiecutter.project}} import main
+from {{cookiecutter.project_name}} import main
 
 
 if __name__ == '__main__':

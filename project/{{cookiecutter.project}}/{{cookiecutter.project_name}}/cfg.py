@@ -13,7 +13,7 @@ import ujson as json
 import copy
 import re
 
-_LOGGER_NAME = "{{cookiecutter.project}}"
+_LOGGER_NAME = "{{cookiecutter.project_name}}"
 logger = None
 config = {
 }
@@ -76,13 +76,13 @@ def _init_logger(params):
 
 def _init_ini_file(params):
     '''
-    setup {{cookiecutter.project}}:main config
+    setup {{cookiecutter.project_name}}:main config
     '''
     global config
 
     ini_filename = params.get('ini_filename', '')
 
-    section = '{{cookiecutter.project}}:main'
+    section = '{{cookiecutter.project_name}}:main'
 
     config = init_ini_file(ini_filename, section)
 

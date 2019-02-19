@@ -43,7 +43,7 @@ test_package_dir = '/'.join(['test_' + each_pkg for each_pkg in full_name_list[1
 the_dict = {
     'pkg': pkg,
     'module': module,
-    'project': project,
+    # 'project': project,
 
     'pkg_name': pkg_name,
     'project_name': project_name,
