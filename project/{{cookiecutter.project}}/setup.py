@@ -13,15 +13,15 @@ requires = [
     'pyramid',
 ]
 
-setup(name='{{project}}',
+setup(name='{{cookiecutter.project_name}}',
       version='0.0',
-      description='{{project}}',
+      description='{{cookiecutter.project_name}}',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
-        "Programming Language :: Python",
-        "Framework :: Pyramid",
-        "Topic :: Internet :: WWW/HTTP",
-        "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+          "Programming Language :: Python",
+          "Framework :: Pyramid",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
       ],
       author='',
       author_email='',
@@ -32,7 +32,7 @@ setup(name='{{project}}',
       zip_safe=False,
       install_requires=requires,
       tests_require=requires,
-      test_suite="{{package}}",
+      test_suite="{{cookiecutter.project_name}}",
       entry_points="""\
       [pyramid.scaffold]
       module = scaffolds:ModuleProjectTemplate
