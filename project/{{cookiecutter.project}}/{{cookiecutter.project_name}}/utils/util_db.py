@@ -190,7 +190,7 @@ def db_bulk_update(db_name, update_data, is_set=True, upsert=True, multi=True):
 
     Args:
         db_name (str): db-name in cfg.config
-        update_data ([{key, val}]): list of to-update data, each includes key and val as described in :py:meth:`rx_med_analysis.util.db_update`
+        update_data ([{key, val}]): list of to-update data, each includes key and val as described in :py:meth:`{{cookiecutter.project_name}}.util.db_update`
         is_set (bool, optional): is using set in db_update or not.
         upsert (bool, optional): is using upsert in db_update or not.
         multi (bool, optional): is using multi in db_update or not.
@@ -211,7 +211,7 @@ def db_force_bulk_update(db_name, update_data, is_set, upsert, multi):
 
     Args:
         db_name (str): db-name in cfg.config
-        update_data ([{key, val}]): list of to-update data, each includes key and val as described in :py:meth:`rx_med_analysis.util.db_update`
+        update_data ([{key, val}]): list of to-update data, each includes key and val as described in :py:meth:`{{cookiecutter.project_name}}.util.db_update`
         is_set (bool): is using set in db_update or not.
         upsert (bool): is using upsert in db_update or not.
         multi (bool): is using multi in db_update or not.
