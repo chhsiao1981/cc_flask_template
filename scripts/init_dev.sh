@@ -14,7 +14,7 @@ echo "virtualenv_dir: ${virtualenv_dir} the_basename: ${the_basename}"
 if [ ! -d ${virtualenv_dir} ]
 then
   echo "no ${virtualenv_dir}. will create one"
-  virtualenv -p `which python` --prompt="[${the_basename}] " "${virtualenv_dir}"
+  virtualenv -p `which python3` --prompt="[${the_basename}] " "${virtualenv_dir}"
 fi
 
 source ${virtualenv_dir}/bin/activate

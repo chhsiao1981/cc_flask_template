@@ -34,3 +34,6 @@ class Error(Exception):
             int: Error code
         """
         return self.error_code
+
+ERROR_EMPTY = Error(S_ERR, '[empty]')
+ERROR_NOT_IMPLEMENT = Error(S_ERR, '[not implemented]')
