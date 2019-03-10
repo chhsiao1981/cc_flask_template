@@ -4,6 +4,8 @@
 import gevent
 import grequests
 
+from {{cookiecutter.project_name}}.constants import HTTP_TIMEOUT
+
 from {{cookiecutter.project_name}}.utils.util_error import Error
 
 

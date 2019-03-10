@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from {{cookiecutter.project_name}}.constants import S_ERR
+
 
 class Error(Exception):
     """Error code with traceback

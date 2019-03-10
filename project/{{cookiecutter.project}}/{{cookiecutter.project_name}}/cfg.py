@@ -50,9 +50,7 @@ def init(params):
     _init_ini_file(params)
     _post_init_config(params)
 
-    _init_process_list()
-
-    # _init_mongo()
+    _init_mongo()
 
     # _init_redis()
 

@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from {{cookiecutter.project_name}}.constants import S_OK, S_ERR, S_ERR_ALREADY_EXIST
+
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}}.utils.util_error import Error
+
 
 def json_dumps_ne(json_struct, default='', indent=0, sort_keys=False):
     """Summary
