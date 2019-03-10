@@ -8,7 +8,7 @@ import ujson as json
 import re
 import argparse
 import copy
-from gevent.wsgi import WSGIServer
+from gevent.pywsgi import WSGIServer
 import traceback
 
 import flask
