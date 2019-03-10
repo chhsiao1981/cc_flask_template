@@ -11,7 +11,7 @@ Including:
     * json / avro
     * sys
     * save_to_global / save_to_cloud
-    * gen_ranomd_string
+    * gen_random_string
     * serialize-deserialize
     * misc
 
@@ -129,6 +129,6 @@ from {{cookiecutter.project_name}}.utils.util_type import _bool
 # misc
 ##########
 
-from {{cookiecutter.project_name}}.utils.util_misc import gen_ranomd_string
+from {{cookiecutter.project_name}}.utils.util_misc import gen_random_string
 from {{cookiecutter.project_name}}.utils.util_misc import flatten
 from {{cookiecutter.project_name}}.utils.util_misc import flatten_results_with_error
