@@ -5,10 +5,10 @@ import re
 
 from flask import url_for
 
-from rx_med_analysis.constants import *
-from rx_med_analysis import cfg
-from rx_med_analysis import util
-from rx_med_analysis.util import Error
+from {{cookiecutter.project_name}}.constants import *
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}} import util
+from {{cookiecutter.project_name}}.util import Error
 
 
 def email_validation(strategy, backend, code, session_token, *args, **kwargs):

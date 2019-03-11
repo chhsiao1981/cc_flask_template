@@ -3,10 +3,10 @@
 import ujson as json
 import re
 
-from rx_med_analysis.constants import *
-from rx_med_analysis import cfg
-from rx_med_analysis import util
-from rx_med_analysis.util import Error
+from {{cookiecutter.project_name}}.constants import *
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}} import util
+from {{cookiecutter.project_name}}.util import Error
 
 
 def user_password(strategy, backend, user, is_new=False, request=None, response=None, *args, **kwargs):

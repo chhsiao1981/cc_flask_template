@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 
+import os
+from subprocess import Popen
+
+from {{cookiecutter.project_name}}.constants import *
+from {{cookiecutter.project_name}} import cfg
+from {{cookiecutter.project_name}}.utils.util_error import Error
+
 
 def makedirs(dir_name):
     """Summary
